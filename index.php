@@ -39,11 +39,3 @@ description:  main file to the theme mathengetwotheme
 	</div><!-- below_header -->
 
    <?php get_footer() ; ?>
-
-
-
-
-
-
-
-
