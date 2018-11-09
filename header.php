@@ -31,4 +31,4 @@
  				</div> <!-- header_nav -->  
  				
 				<?php wp_head(); ?>
-	   		</header><!-- mathengetwo_header --> 
+	   		</header><!-- mathengetwo_header --> 	
