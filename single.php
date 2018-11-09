@@ -8,9 +8,9 @@ description: The template for displaying all single posts and attachments
 <?php  get_header(); ?>
 
 
-<div class="notice">  powered by single.php   </div>
+<div class="notice"> powered by single.php    </div>
 
- <div class="below_header"> 
+
    	
 	<?php 
 		if ( have_posts() ) {
@@ -49,43 +49,27 @@ description: The template for displaying all single posts and attachments
 						</li>
 
 						<li>  	<?php  include (get_template_directory() . '/template-parts/page/customfield_template.php');  ?> </li> 
+
+						<li style="min-width: 100%;">
+							<div class="content">
+								<?php the_content(); ?>
+
+ 							</div><!--	content -->
+
+
+
+						</li>
 					
 					</ul>
 				</div><!-- two_columns -->
- </div><!-- below_header -->
-
- <div class="content">
- 		<?php the_content(); ?>
-
- </div><!--	content -->
-
-
-
-
-
-
-
 
 				<?php		
 					} // end while
 				} // end if
+
+
+				get_sidebar(); 
 		?>
-
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <?php get_footer(); ?>
