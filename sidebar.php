@@ -6,13 +6,15 @@ description: The Main sidebar
 */
 ?>
 
-<div class="main_sidebar">
+<div class="sidebar">
 	<h3> Sidebar template  </h3>
-	<?php if ( is_active_sidebar('') ) { ?>
 
-			<ul id="sidebar">
+	<?php
+	 if ( is_active_sidebar('main_sidebar ') ) { ?>
+
+			<ul id="main_sidebar">
             
-				<?php dynamic_sidebar(''); ?>
+				<?php dynamic_sidebar('main_sidebar'); ?>
                
 			</ul>
 
@@ -23,4 +25,5 @@ description: The Main sidebar
 		
 		}
 		?>
-</div><!--main_sidebar -->
+
+</div><!--sidebar -->
