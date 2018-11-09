@@ -22,8 +22,8 @@ add_action('wp_enqueue_scripts', 'mathengetwo_add_theme_scripts' );
 if (function_exists('register_sidebar')) {
 
   register_sidebar(array(
-    'name' => 'Sidebar One',
-    'id'   => 'sidebar_1',
+    'name' => 'Main Sidebar',
+    'id'   => 'main_sidebar',
     'description'   => 'This is a widgetized area.'
  
   ));
