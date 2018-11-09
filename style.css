@@ -38,7 +38,6 @@ header.matehngetwo_header {
   border: 2px solid red;
    padding:10px;
    padding-bottom:60px;   /* Height of the footer */
-   border:2px solid red;
    background-color:  grey;
 }
 
@@ -86,6 +85,7 @@ footer.mathengetwo_footer {
 .content{
   border: 2px solid blue;
   background-color: orange;
+/*  padding-left: 5%;*/
 
 }
 
@@ -98,39 +98,45 @@ footer.mathengetwo_footer {
 }
 
 .two_columns{
-  background-color: purple;
+/*  background-color: purple;*/
   border: 0;
   margin: 0;
+  float: right;
+  width: 78%;
+
+
 
 }
+
 .two_columns ul{
     margin: 0;
     padding: 0;
     list-style: none;
+
 }
 
 .two_columns ul li{
   display: inline-block;
   vertical-align: top;
   border: 2px solid blue;
-    max-width: 60%;
+ /*   max-width: 60%;*/
 
 }
 
 .three_columns{
   background-color: green;
-  border: 0;
+  border: 2px solid red;
   margin: 0;
 }
 
-ul.three_columns {
+.three_columns ul {
   list-style: none;
   margin: 0;
   padding: 0;
 
 }
 
-ul.three_columns  li{
+.three_columns  ul li{
   display: inline-block;
   vertical-align: top;
   border: 2px solid blue;
@@ -141,6 +147,7 @@ ul.three_columns  li{
 /*Custom field */
 .Customfield {
     background-color: pink;
+    max-width: 190px;
  /* border: 2px solid blue;*/
 }
 
@@ -167,18 +174,20 @@ ul.post-meta li{
   small-caps; 
   color: maroon;
    }
-.main_sidebar{
+
+ 
+.sidebar{
   border: 2px solid blue;
+  background-color: white;
+  width: 20%;
+  min-height: 100%;
 }
 
-.main_sidebar ul{
-  list-style: none;
-  margin: 0;
-  padding: 0;
+#main_sidebar{
+ /* list-style: none;*/
 }
-.main_sidebar ul li{
-  display: list-item;
-}
+
+
 
 /*Custom field styled Version  */
 
@@ -198,25 +207,19 @@ ul.customfield li{
 .excerpt{
   border: 2px solid blue;
   background-color: beige;
+
+
  
 }
 
 
+/* title  styling */
+.title{
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.title h3{
+   background-color: aquamarine;
+    padding: 0;
+    margin: 0;
+}
