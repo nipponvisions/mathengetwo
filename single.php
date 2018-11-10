@@ -23,34 +23,31 @@ description: The template for displaying all single posts and attachments
 				<!-- 	two_columns  -->
 				<div class="two_columns">
 					<ul>
-						<li>
+						<li >
+						<div class="single_image">
 
 							<?php
 						 	if(has_post_thumbnail()){
 
 						 		// check if the post has a Post Thumbnail assigned to it.
-						 		?>
-						 		<div class="post_thumbnail">
-						 			<?php the_post_thumbnail('banner_image'); ?>
+						 		
+						 			 the_post_thumbnail('medium'); 
 
-						 		</div><!-- post_thumbnail -->
-
-								<?php		
 								}else{
 									// load banner place holder 
 									?>
-									<img src="<?php bloginfo('template_url')?>/assets/images/image_place_holder.png" style="width:600px; height:200px;">
+									<img src="<?php bloginfo('template_url')?>/assets/images/image_place_holder.png">
 
 									<?php
 
 									}
 									?>
-
+						</div><!-- banner_image -->			
 						</li>
 
 						<li>  	<?php  include (get_template_directory() . '/template-parts/page/customfield_template.php');  ?> </li> 
 
-						<li style="min-width: 100%;">
+						
 							<div class="content">
 								<?php the_content(); ?>
 
@@ -58,7 +55,7 @@ description: The template for displaying all single posts and attachments
 
 
 
-						</li>
+						
 					
 					</ul>
 				</div><!-- two_columns -->
@@ -69,7 +66,7 @@ description: The template for displaying all single posts and attachments
 
 
 				get_sidebar(); 
-		?>
+	
 
-
-<?php get_footer(); ?>
+ 				get_footer();
+  ?>

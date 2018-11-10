@@ -77,15 +77,43 @@ footer.mathengetwo_footer {
 }
 
 .post_thumbnail{
-  border:2px solid blue;
-  padding: 2px;
+    border: 2px solid blue;
+    padding: 2px;
+    min-width: 150px;
+    min-height: 150px;
+    background-color: bisque;
 
+}
+.post_thumbnail img{
+  max-width: 150px;
+}
+
+.banner_image{
+  min-width: 600px;
+  max-width: 200px;
+  background-color: beige;
+}
+
+.single_image{
+  min-width: 600px;
+  max-width: 400px;
+  background-color: beige;
+}
+.single_image img{
+  width: 600px;
+  height: 400px;
+
+}
+
+.template_part{
+  
 }
 
 .content{
   border: 2px solid blue;
   background-color: orange;
 /*  padding-left: 5%;*/
+min-width: 100%;
 
 }
 
@@ -121,6 +149,9 @@ footer.mathengetwo_footer {
   border: 2px solid blue;
  /*   max-width: 60%;*/
 
+}
+#banner_image{
+  min-width: 400px;
 }
 
 .three_columns{
@@ -206,10 +237,10 @@ ul.customfield li{
 
 .excerpt{
   border: 2px solid blue;
-  background-color: beige;
+  background-color: pink;
+  min-width: 100%;
 
 
- 
 }
 
 

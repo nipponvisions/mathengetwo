@@ -35,7 +35,8 @@ if (function_exists('register_sidebar')) {
 
 //add image size
      add_image_size('banner_image', 600, 200, array('left','top'));
-     add_image_size('thumbnail', 200, 200, array('left','top'));
+     // add_image_size('thumbnail', 200, 200, array('left','top'));
+
 
 
 
@@ -79,10 +80,3 @@ if (function_exists('register_sidebar')) {
   register_post_type('girls', $args);
  }
  add_action('init', 'girls_custom_post_type');
-
-
-
-
-?>
-
-

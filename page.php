@@ -23,17 +23,25 @@ description: The template for displaying pages
 					<div class= "two_columns">
 						<ul>
 							<li> 
-							<?php
+						
 
+							<?php
 							// set post_thumbnails according to pages
 							if (has_post_thumbnail()) {
 								# code...
 								if(is_page()){
-									the_post_thumbnail('banner_image');
+									?>
+									<div class="banner_image">
+
+										<?php the_post_thumbnail('banner_image'); ?>
+									
+									</div> <!-- banner_image -->
+
+									<?php
 								}
 							}
 							?>
-
+						
 							</li>
 
 							<li>
