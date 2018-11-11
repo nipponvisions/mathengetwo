@@ -1,6 +1,6 @@
 /**
-Theme Name: Mathengetwotheme;
-Author: Mathenge Moses;
+Theme Name: Mathengetwotheme
+Author: Mathenge Moses
 Version: 0.01;
 Description: A theme to the  mathengetwo site
 Theme URI : http://mathengetwo.com/
@@ -26,7 +26,7 @@ body {
 
 }
 header.matehngetwo_header {
-   background:.ff0;
+   background:ff0;
    padding:10px;
    background-color: pink;
    border: 2px solid blue;
@@ -96,12 +96,15 @@ footer.mathengetwo_footer {
 
 .single_image{
   min-width: 600px;
-  max-width: 400px;
+  min-height: 400px;
   background-color: beige;
 }
+
 .single_image img{
-  width: 600px;
-  height: 400px;
+  max-width: 600px;
+  max-height: 400px;
+    margin: auto;
+    display: block;
 
 }
 

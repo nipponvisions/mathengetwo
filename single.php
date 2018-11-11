@@ -36,7 +36,8 @@ description: The template for displaying all single posts and attachments
 								}else{
 									// load banner place holder 
 									?>
-									<img src="<?php bloginfo('template_url')?>/assets/images/image_place_holder.png">
+									<!-- <p> no image found </p> -->
+							<img src="<?php bloginfo('template_url')?>/assets/images/image_place_holder.png"> 
 
 									<?php
 
@@ -45,18 +46,16 @@ description: The template for displaying all single posts and attachments
 						</div><!-- banner_image -->			
 						</li>
 
-						<li>  	<?php  include (get_template_directory() . '/template-parts/page/customfield_template.php');  ?> </li> 
+						<li>  	
+							<?php  include (get_template_directory() . '/template-parts/page/customfield_template.php');  ?>  
+						</li> 
 
 						
 							<div class="content">
 								<?php the_content(); ?>
 
  							</div><!--	content -->
-
-
-
-						
-					
+	
 					</ul>
 				</div><!-- two_columns -->
 

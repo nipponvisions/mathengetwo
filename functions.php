@@ -57,6 +57,7 @@ if (function_exists('register_sidebar')) {
                 'new_item' =>'New Post',
                 'view_item' => 'View Post',
                 'all_items' => 'All Posts',
+                'rewrite' => array( 'slug' => 'Girls' ),
 
                 'taxonomies' =>array('category'),
                 'supports' =>array(
