@@ -48,14 +48,27 @@ description: The template for displaying all single posts and attachments
 
 						<li>  	
 							<?php  include (get_template_directory() . '/template-parts/page/customfield_template.php');  ?>  
-						</li> 
+						</li>
 
-						
+						<li>
+						<?php
+
+						// if the post content  is empty or not
+						if ( !empty( get_the_content() ) ){
+							?>
 							<div class="content">
-								<?php the_content(); ?>
 
- 							</div><!--	content -->
-	
+
+							<?php the_content(); ?>
+
+							</div><!--content -->
+
+							<?php
+						}
+						?>
+								
+						</li>
+
 					</ul>
 				</div><!-- two_columns -->
 
