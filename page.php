@@ -22,22 +22,34 @@ description: The template for displaying pages
 
 					<div class= "two_columns">
 						<ul>
-							<li> 
-							<?php
+							<li>
+							<div class="single_image">
 
+							<?php
 							// set post_thumbnails according to pages
 							if (has_post_thumbnail()) {
 								# code...
-								if(is_page()){
-									the_post_thumbnail('banner_image');
-								}
-							}
-							?>
+								
+									the_post_thumbnail('medium'); 
+								
 
+								}else{
+									// echo "Image Not Found";
+									?>
+									<img src="<?php bloginfo('template_url')?>/assets/images/image_place_holder.png" alt="image_not_availlable">
+
+									<?php
+								}
+							
+							?>
+							</div><!--single_image -->
+						
 							</li>
 
 							<li>
-								<?php  include (get_template_directory() . '/template-parts/page/customfield_template.php');  ?>
+								<div class="template_part"> 
+									<?php  include (get_template_directory() . '/template-parts/page/customfield_template.php');  ?>
+								</div> <!-- template_part -->
 
 							</li>
 
@@ -47,8 +59,14 @@ description: The template for displaying pages
 							<?php the_content(); ?> 
 
 						</div>
+<<<<<<< HEAD
 					</div>
 
+=======
+					</div><!-- two_columns -->
+
+	
+>>>>>>> e2e5b5599dbc734fc18ba1df1af5ced139912895
 				<?php		
 					} // end while
 				} // end if
