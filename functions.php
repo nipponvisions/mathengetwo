@@ -82,7 +82,52 @@ if (function_exists('register_sidebar')) {
 
 
 
+ function boys_custom_post_type(){
 
-?>
+  $args = array( 
 
+                'labels' => array(
+                                'name' =>'Boys',
+                                'sigular_name' =>'boy'
+                                  ),
+
+                'add_new' => _x('Add New', 'boy'),
+                'add_new_item' =>'Add New Post',
+                'edit_item' => 'Edit Post',
+                'new_item' =>'New Post',
+                'view_item' => 'View Post',
+                'all_items' => 'All Posts',
+
+                'taxonomies' =>array('category'),
+                'supports' =>array(
+                                    'title',
+                                    'author',
+                                    'thumbnail',
+                                    'excerpt',                        
+                                    'editor',
+                                    'custom-fields',
+                                    'revisions',
+                                    'comments',
+                                  ),
+
+                'public' =>true,
+                'has_archive' =>true,
+                'exclude_from_search' =>true
+
+                );
+
+  
+  register_post_type('boys', $args);
+ }
+ add_action('init', 'boys_custom_post_type');
+
+
+
+
+// Replaces the excerpt "Read More" text by a link
+function new_excerpt_more($more) {
+       global $post;
+  return '<a class="moretag" href="'. get_permalink($post->ID) . '"> Read the full article...</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
 

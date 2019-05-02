@@ -48,9 +48,11 @@ description: The template for displaying all single posts and attachments
 
 						</li>
 
-						<li>  	<?php  include (get_template_directory() . '/template-parts/page/customfield_template.php');  ?> </li> 
+						<li>  	
+							<?php  include (get_template_directory() . '/template-parts/page/customfield_template.php');  ?> 
+						</li> 
 
-						<li style="min-width: 100%;">
+						<li>
 							<div class="content">
 								<?php the_content(); ?>
 

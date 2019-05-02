@@ -49,12 +49,6 @@ description: The template for displaying pages
 						</div>
 					</div>
 
-
-					
-					
-
-
-	
 				<?php		
 					} // end while
 				} // end if
