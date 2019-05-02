@@ -1,6 +1,6 @@
 /**
-Theme Name: Mathengetwotheme
-Author: Mathenge Moses
+Theme Name: Mathengetwotheme;
+Author: Mathenge Moses;
 Version: 0.01;
 Description: A theme to the  mathengetwo site
 Theme URI : http://mathengetwo.com/
@@ -26,7 +26,7 @@ body {
 
 }
 header.matehngetwo_header {
-   background:ff0;
+   background:.ff0;
    padding:10px;
    background-color: pink;
    border: 2px solid blue;
@@ -77,47 +77,15 @@ footer.mathengetwo_footer {
 }
 
 .post_thumbnail{
-    border: 2px solid blue;
-    padding: 2px;
-    min-width: 150px;
-    min-height: 150px;
-    background-color: bisque;
+  border:2px solid blue;
+  padding: 2px;
 
-}
-.post_thumbnail img{
-  max-width: 150px;
-}
-
-.banner_image{
-  min-width: 600px;
-  max-width: 200px;
-  background-color: beige;
-}
-
-.single_image{
-  min-width: 600px;
-  min-height: 400px;
-  background-color: beige;
-}
-
-.single_image img{
-  max-width: 600px;
-  max-height: 400px;
-    margin: auto;
-    display: block;
-
-}
-
-.template_part{
-  
 }
 
 .content{
   border: 2px solid blue;
   background-color: orange;
 /*  padding-left: 5%;*/
-min-width: 600px;
-min-height: 200px;
 
 }
 
@@ -153,9 +121,6 @@ min-height: 200px;
   border: 2px solid blue;
  /*   max-width: 60%;*/
 
-}
-#banner_image{
-  min-width: 400px;
 }
 
 .three_columns{
@@ -241,10 +206,10 @@ ul.customfield li{
 
 .excerpt{
   border: 2px solid blue;
-  background-color: pink;
-  min-width: 100%;
+  background-color: beige;
 
 
+ 
 }
 
 
