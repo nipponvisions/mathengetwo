@@ -5,6 +5,8 @@
 	Description: powers the Footer to the mathengetwo theme
 */
 ?>
+			<div style="clear:both"></div> 
+			</div><!-- below_header -->
 
 			<footer class="mathengetwo_footer">
 

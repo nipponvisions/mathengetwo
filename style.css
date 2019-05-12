@@ -26,7 +26,7 @@ body {
 
 }
 header.matehngetwo_header {
-   background:.ff0;
+  
    padding:10px;
    background-color: pink;
    border: 2px solid blue;
@@ -38,7 +38,7 @@ header.matehngetwo_header {
   border: 2px solid red;
    padding:10px;
    padding-bottom:60px;   /* Height of the footer */
-   background-color:  grey;
+  /* background-color:  grey;*/
 }
 
 footer.mathengetwo_footer {
@@ -90,11 +90,15 @@ footer.mathengetwo_footer {
 }
 
 #disclaimer_box{
-  border: 2px solid blue;
-  background-color:#999999;
-  width: 400px;
-  float: right;
-  padding-left:20px;  
+    border: 2px solid blue;
+    background-color: #999999;
+    width: 400px;
+    /* float: right; */
+    padding-left: 20px;
+    position: absolute;
+    top: 150;
+    right: 0px;
+
 }
 
 .two_columns{
@@ -110,8 +114,8 @@ footer.mathengetwo_footer {
 
 .two_columns ul{
     margin: 0;
-    padding: 0;
     list-style: none;
+    padding: 0;
 
 }
 
@@ -120,6 +124,7 @@ footer.mathengetwo_footer {
   vertical-align: top;
   border: 2px solid blue;
  /*   max-width: 60%;*/
+
 
 }
 
@@ -145,11 +150,42 @@ footer.mathengetwo_footer {
 }
 
 /*Custom field */
-.Customfield {
-    background-color: pink;
-    max-width: 190px;
- /* border: 2px solid blue;*/
+
+
+/*.Customfield {
+    max-width: 180px;
+    border: 2px solid blue;
+}*/
+/* girls */
+ul.Customfield_girls {
+  list-style: none;
+   background-color: pink;
+    max-width: 180px;
+  
 }
+
+ul.Customfield_girls  li{
+  display: block;
+  border: 1px solid white;
+
+}
+/* boys */
+ul.Customfield_boys {
+   max-width: 180px;
+  list-style: none;
+   background-color: #dfdff1;
+  
+}
+
+ul.Customfield_boys  li{
+  display: block;
+  border: 1px solid white;
+
+}
+
+
+
+
 
 .post-meta{
   background-color: pink;
@@ -189,19 +225,6 @@ ul.post-meta li{
 
 
 
-/*Custom field styled Version  */
-
-ul.customfield{
-    list-style: none;
-  margin: 0;
-  padding: 0;
-}
-ul.customfield li{
-    display: list-item;
-    border: 2px solid white;
-    max-width: unset;
- 	
-}
 
 
 .excerpt{
@@ -223,3 +246,4 @@ ul.customfield li{
     padding: 0;
     margin: 0;
 }
+

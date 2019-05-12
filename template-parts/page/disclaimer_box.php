@@ -9,8 +9,8 @@
 
 		<h3>  Disclaimer! </h3>
 		<p> This is some disclaimer text <br>
-		that goes to some pages and not all <br>
-		powered by the special template <br>
+		that goes to only the portfolio page   <br>
+		is is powered by the special template and template part <br>
 		and meant to modify pages  powered by generic page.php
 		</p>
 	</div> <!-- disclaimer_box --> 

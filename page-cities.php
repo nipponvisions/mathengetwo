@@ -1,6 +1,6 @@
 <?php
 /*
-Template name: index.php
+Template name: page-cities.php
 author : Mathenge Moses
 description:  main file to the theme mathengetwotheme
 
@@ -9,7 +9,7 @@ description:  main file to the theme mathengetwotheme
 
 <?php   get_header(); ?>
 
-<div class="notice"> this is index.php </div>
+<div class="notice"> page-cities.php </div>
 
    <div class="below_header"> 
    	
@@ -27,9 +27,9 @@ description:  main file to the theme mathengetwotheme
 					}
 
 					?>
+	<?php the_content(); ?>
 
-		<?php the_excerpt(); ?> <a href="<?php echo get_permalink(); ?>"> Read More...</a> 
-
+<?php the_excerpt(); ?> <a href="<?php echo get_permalink(); ?>"> Read More...</a> 
 
 
 

@@ -1,6 +1,6 @@
 <?php
 /*
-Template name: archive.php
+Template name: archive-girls.php
 author : Mathenge Moses
 description:  for displaying the posts archives
 
@@ -8,8 +8,10 @@ description:  for displaying the posts archives
 ?>
 
 <?php   get_header(); ?>
+<div class="below_header">
 
-<div class="notice"> this is archive.php </div>
+<div class="notice"> this is archive-girls.php </div>
+
 
 <?php 
 	if ( have_posts() ) {
@@ -18,7 +20,8 @@ description:  for displaying the posts archives
 			?>
 			<div class= "two_columns">
 				<ul>
-					<li>  <h3> <?php  the_title(); ?> </h3>
+					<li>
+					 	<h3> <?php  the_title(); ?> </h3>
 						<ul>
 							<li> 
 								<div class= "post_thumbnail">
@@ -54,9 +57,6 @@ description:  for displaying the posts archives
 			} // end while
 		} // end if
 ?>
-
-	<?php get_sidebar(); ?>
-
+<?php get_sidebar(); ?> 
+	<div style="clear:both"></div> 
 <?php get_footer() ; ?>
-
-
